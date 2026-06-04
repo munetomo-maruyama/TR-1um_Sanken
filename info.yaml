@@ -8,10 +8,10 @@
 # Project metadata (used for documentation / review)
 # ======================================================
 project:
-  title: ""        # Project title (e.g. "Simple CPU", "PLL", "ADC")
-  author: ""       # Your name
-  discord: ""      # Optional: Discord username (for support / communication)
-  description: ""  # Short one-line description
+  title: "Sanken MPW"         # Project title (e.g. "Simple CPU", "PLL", "ADC")
+  author: "Maruyama Munetomo" # Your name
+  discord: "munetomo"         # Optional: Discord username (for support / communication)
+  description: "Sanken Multiple Projects"  # Short one-line description
 
 # ======================================================
 # Layout (GDS) configuration
