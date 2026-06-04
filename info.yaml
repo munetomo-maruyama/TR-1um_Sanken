@@ -21,7 +21,7 @@ gds:
   # - start with "tr_1um_"
   # - include your GitHub username (for uniqueness)
   # Example: tr_1um_jun1okamura
-  top_cell: "tr_1um_munetomo"
+  top_cell: "tr_1um_username"
 
   # File extension of layout
   extension: "gds"
@@ -44,7 +44,7 @@ mdp:
   # Output GDS file name generated after MDP
   # Recommended:
   #   IP62_<github_username>.gds
-  file: "IP62_munetomo.gds"
+  file: "IP62_username.gds"
 
 # ======================================================
 # PDK configuration (DO NOT MODIFY unless necessary)
