@@ -4,7 +4,6 @@
 * pin P11
 * pin P10
 * pin P15
-* pin P14
 * pin P8
 * pin P3
 * pin P13
@@ -16,11 +15,11 @@
 * pin P7
 * pin P2
 * pin P4
-* pin P6
-.SUBCKT tr_1um_munetomo_maruyama P11 P10 P15 P14 P8 P3 P13 VDD P16 P5 P12 VSS
-+ P7 P2 P4 P6
+* pin P14,P6
+.SUBCKT tr_1um_munetomo_maruyama P11 P10 P15 P8 P3 P13 VDD P16 P5 P12 VSS P7 P2
++ P4 P14|P6
 * cell instance $1 r0 *1 0,0
-X$1 P11 VSS P2 P13 P12 P3 P14 P16 VDD P5 P15 P4 P7 P10 P8 P6 OSS_FRAME
+X$1 P11 VSS P2 P13 P12 P3 P14|P6 P16 VDD P5 P15 P4 P7 P10 P8 P14|P6 OSS_FRAME
 .ENDS tr_1um_munetomo_maruyama
 
 * cell OSS_FRAME
