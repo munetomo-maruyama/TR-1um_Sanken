@@ -2,33 +2,35 @@
 
 * cell tr_1um_munetomo_maruyama
 * pin P14
-* pin P11
+* pin VDD
+* pin P2
 * pin P10
 * pin P15
 * pin P8
 * pin P3
 * pin P13
-* pin VDD
+* pin P11
 * pin P16
 * pin P5
 * pin P12
 * pin VSS
 * pin P7
-* pin P2
 * pin P4
 * pin P6
-.SUBCKT tr_1um_munetomo_maruyama P14 P11 P10 P15 P8 P3 P13 VDD P16 P5 P12 VSS
-+ P7 P2 P4 P6
+.SUBCKT tr_1um_munetomo_maruyama P14 VDD P2 P10 P15 P8 P3 P13 P11 P16 P5 P12
++ VSS P7 P4 P6
 * cell instance $1 r0 *1 -605,570
-X$1 P14 P6 mmINVERTER
-* cell instance $3 r0 *1 0,0
-X$3 P11 VSS P2 P13 P12 P3 P14 P16 VDD P5 P15 P4 P7 P10 P8 P6 OSS_FRAME
+X$1 VDD P2 P14 P6 mmINVERTER
+* cell instance $7 r0 *1 0,0
+X$7 P11 VSS P2 P13 P12 P3 P14 P16 VDD P5 P15 P4 P7 P10 P8 P6 OSS_FRAME
 .ENDS tr_1um_munetomo_maruyama
 
 * cell mmINVERTER
+* pin A
+* pin Q
 * pin VDD
 * pin VSS
-.SUBCKT mmINVERTER VDD VSS
+.SUBCKT mmINVERTER A Q VDD VSS
 * device instance $1 r0 *1 0,40 PMOS
 M$1 Q A VDD VDD PMOS L=1U W=12U AS=33.6P AD=33.6P PS=29.6U PD=29.6U
 * device instance $2 r0 *1 0,10 NMOS
