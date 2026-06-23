@@ -3,7 +3,8 @@
 
 * cell tr_1um_munetomo_maruyama
 * pin VDD
-* pin P1,P2
+* pin P1
+* pin P2
 * pin P10
 * pin P9
 * pin P3
@@ -17,12 +18,12 @@
 * pin P13
 * pin P4
 * pin VSS
-.SUBCKT tr_1um_munetomo_maruyama VDD P1|P2 P10 P9 P3 P12 P15 P14 P5 P11 P6 P7
+.SUBCKT tr_1um_munetomo_maruyama VDD P1 P2 P10 P9 P3 P12 P15 P14 P5 P11 P6 P7
 + P13 P4 VSS
 * cell instance $1 r0 *1 -605,570
-X$1 P1|P2 P1|P2 VDD VSS mmINVERTER
+X$1 P1 P2 VDD VSS mmINVERTER
 * cell instance $7 r0 *1 0,0
-X$7 P13 P11 P4 P15 P14 P5 VDD P1|P2 P3 P7 P1|P2 P6 P9 P12 P10 VSS OSS_FRAME
+X$7 P13 P11 P4 P15 P14 P5 VDD P2 P3 P7 P1 P6 P9 P12 P10 VSS OSS_FRAME
 .ENDS tr_1um_munetomo_maruyama
 
 * cell mmINVERTER
