@@ -2,7 +2,6 @@
 *** My special header ***
 
 * cell tr_1um_username
-* pin P2,P3
 * pin P13
 * pin P11
 * pin P4
@@ -10,6 +9,8 @@
 * pin P14
 * pin P5
 * pin VDD
+* pin P2
+* pin P3
 * pin P7
 * pin P1
 * pin P6
@@ -17,9 +18,9 @@
 * pin P12
 * pin P10
 * pin VSS
-.SUBCKT tr_1um_username P2|P3 P13 P11 P4 P15 P14 P5 VDD P7 P1 P6 P9 P12 P10 VSS
+.SUBCKT tr_1um_username P13 P11 P4 P15 P14 P5 VDD P2 P3 P7 P1 P6 P9 P12 P10 VSS
 * cell instance $1 r0 *1 0,0
-X$1 P13 P11 P4 P15 P14 P5 VDD P2|P3 P2|P3 P7 P1 P6 P9 P12 P10 VSS OSS_FRAME
+X$1 P13 P11 P4 P15 P14 P5 VDD P2 P3 P7 P1 P6 P9 P12 P10 VSS OSS_FRAME
 .ENDS tr_1um_username
 
 * cell OSS_FRAME
